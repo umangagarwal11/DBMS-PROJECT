@@ -1,0 +1,304 @@
+<html><!-- Change Date 04/08/15 - Enhancements - Alignment Issue bcoz of marquee - Removed  - by Afzal --><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+
+<script language="javascript">
+document.onkeydown = function()
+{
+	if(window.event && window.event.keyCode == 116) 
+	{ // Capture and remap F5
+		window.event.keyCode = 505;
+	} 
+	if(window.event && window.event.keyCode == 505) 
+	{ 
+		return false; 
+	}
+}	
+</script>
+<script language="javascript">
+function load(obj)
+{
+	if(obj.flag.value==0)
+   	{
+		history.go(1);
+	}
+}
+function unload(obj)
+{
+	obj.flag.value=0;
+}
+blServletFlag=true; 
+function doubleclick(form)
+{
+ 	if(blServletFlag==true)
+  	{
+  		blServletFlag=false; 
+ 		form.submit();
+ 	}
+ 	else
+ 	{
+ 		alert("Already submited...");
+ 		form.submit();
+ 	}
+}
+function clickIE4()
+{
+	if (event.button==2)
+	{
+		return false;
+	}
+}     
+this.top.window.document.title = "Indian Bank";
+document.oncontextmenu=new Function("return false");
+if (screen.width == 800)
+{
+	
+		document.write('<link href="../cmn/IndianBank_IE800.css" type="text/css" rel="stylesheet" />') 
+	
+}
+else if(screen.width == 1024)
+{	
+	
+		document.write('<link href="../cmn/IndianBank_IE1024.css" type="text/css" rel="stylesheet" />') 
+		
+}
+else
+{
+
+		document.write('<link href="../cmn/IndianBank_IE.css" type="text/css" rel="stylesheet" />') 
+		
+}
+</script><title>Indian Bank</title><link href="Indian%20Bank_files/IndianBank_IE.css" type="text/css" rel="stylesheet">
+<script language="javascript" src="Indian%20Bank_files/login.js"></script>
+<!-- Added by afzal for marquee replacement 04-08-15 -->
+<script src="Indian%20Bank_files/jquery-1.js"></script> 
+<script type="text/javascript" src="Indian%20Bank_files/jquery.js"></script> 
+<style>
+	#demo 
+	{
+	  list-style: none;
+	  color:#fff;
+	  text-align:center;
+	}
+	#demo div { display: none; cursor:pointer;}
+</style>
+<script>
+	$(function(){
+			$('#demo').textRotator({
+				random : true,
+				fadeIn : 1000,
+				fadeOut : 500,
+				duration : 5000,
+				debug : false
+
+			})
+		})
+</script>
+<!-- end of marquee replacement 04-08-15 -->
+<script language="javascript">
+var arrstr = new Array(36);
+var letters;
+var capsLock = false;
+var letters
+function callPage(pageName)
+{
+	window.open(pageName);
+	return;
+}
+
+		rnumber=733616172;
+	
+inAttempt=0;
+function disableElementId()
+{
+	
+	var tb3 = document.getElementById('Error');
+	tb3.style.visibility = "hidden";
+	var tb4 = document.getElementById('Success');
+	tb4.style.visibility = "hidden";
+}
+
+function forgotUserID()
+{
+	document.form1.action="/jsp/IBSForgotUserID.jsp";	
+	document.form1.submit();
+}
+function Submit_Validate()
+{
+	if(document.form1.uid.value == "")
+	{
+		alert("Please enter User ID");
+		document.form1.uid.focus();
+		return false;
+	}
+	 var str = document.getElementById("uid").value.replace(/^[0]+/g,"");
+		document.getElementById("uid").value=str;	
+		document.form1.submit();
+}
+function callAlert()
+{
+document.form1.uid.focus();
+
+}
+
+</script>
+</head>
+<body scroll="no" onload="callAlert();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form name="form1" method="post" action="/servlet/ibs.servlets.IBSLoginServlet?method=1">
+<input name="HandleID" value="CHECK" type="HIDDEN">
+<input name="Graphics" type="HIDDEN">
+<input name="ApplnFlag" value="A" type="HIDDEN">
+<input name="rnumber" value="733616172" type="HIDDEN">
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr bgcolor="#003282">
+<td align="center"><img class="BankLogo" src="Indian%20Bank_files/image006.gif"> </td>
+</tr>
+</tbody></table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td><div id="Error" style="visibility: hidden;">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+</div></td></tr>
+	<tr>
+		<td>
+			
+		</td>
+	</tr>
+<tr align="center">
+<td><font class="login1">Indian Bank Welcomes You to the New World of Convenience </font><font class="login2">India</font><font class="login3">Net</font><font class="login2">Bank</font>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</tbody></table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td width="4%">&nbsp;</td>
+<td width="16%">&nbsp;<div id="Security1"><font color="red">Security Caution !</font></div>
+<br>
+<div id="Security2"><font color="red">NEVER respond to any popup,email, 
+SMS or phone call, no matter how appealing or official  looking,  
+seeking your personal information  such as username, password(s), mobile
+ number, ATM Card details, etc. Such communications are sent or created 
+by fraudsters to trick you into parting with your credentials.</font></div></td>
+<td width="50%">&nbsp;
+<table valign="center" class="MainTable" cellspacing="1" cellpadding="3" border="0" bgcolor="00ff00" align="center">
+<tbody><tr height="15%"><td>&nbsp;</td></tr>
+<tr height="20%">
+<td class="frmlbl">&nbsp;&nbsp;&nbsp;Login User ID</td>
+<td class="frmlbl">&nbsp;&nbsp;<input autocomplete="off" name="uid" id="uid" type="text"></td>
+</tr>
+<tr height="10%">
+<td align="right"><font size="3"><b>&nbsp;(Enter your Password </b></font></td><td align="left"><font size="3"><b>in the next Screen)</b></font></td>
+</tr>
+<tr height="20%">
+<td colspan="2" align="center">
+<input onclick="return Submit_Validate();" target="_top" name="btClear" class="loginButtons" value="Login" type="submit"></td>
+</tr>
+</tbody></table>
+</td>
+<td width="20%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td width="80%">&nbsp;<a href="https://seal.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=WWW.INDIANBANK.NET.IN&amp;lang=en" target="_blank" title="Click here to verify"><img class="Verisign" src="Indian%20Bank_files/VerisignCertificate.gif" border="0"></a><br>
+<div id="Security1"><font color="#003399"> Security Note:</font></div><br>
+<div id="Security2"><font color="#003399"> When you Login, Your User Id and Password travels in an encrypted and highly secured mode.</font></div>
+</td>
+<td width="20%">&nbsp;</td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+
+<script language="javascript">
+var tb2 = document.getElementById('Error');
+tb2.style.visibility = "hidden";
+</script>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr></tr>
+<!--commented by afzal for solving the marquee issue
+<tr><td>
+<h3><marquee time=10  scrollamount="2" scrolldelay="5" >
+scriptlet will come here - not able to comment
+if(scrstockupdatesobj!=null)
+	{
+		ibs.sysadmin.screenobjects.StockRatesObject[] arrstockratesObj = scrstockupdatesobj.getStockratesObj();
+		if(arrstockratesObj!=null)
+		{
+			for (int i=0;i<3;i++) 
+			{
+       	   			if(IBSUtils.handleNullValue(arrstockratesObj[i].getStValue()).trim().length()>0)
+       	    		{%>
+					<A class="marquee" href="javascript:callPage('scriptlet= IBSUtils.handleNullValue(arrstockratesObj[i].getStValue())%>'); "><b> scriptlet= IBSUtils.handleNullValue(arrstockratesObj[i].getStName()) %> </b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					scriptlet}
+	   				else
+	   				{%>
+						<b> scriptlet= i++ scriptlet . scriptlet= IBSUtils.handleNullValue(arrstockratesObj[i].getStName()) %> </b>&nbsp;&nbsp;&nbsp;&nbsp;
+					scriptlet}
+			}
+		}
+	}
+%></marquee></h3></td></tr> 
+
+<tr align="center" valign="top"><td>
+<tr></tr>
+end of marquee issue-->
+<!-- added by afzal for marquee replacement - 04-08-15 -->
+</tbody></table><table width="100%" height="12%">
+	<tbody><tr align="center"><td class="frmlbl">To know Your User Id <a href="javascript:forgotUserID()">Click Here</a>&nbsp;&nbsp;(for Retail Users only)</td></tr>
+	<tr width="100%" height="3%">
+		<td bgcolor="#333399">
+			<!-- <marquee time=10  scrollamount="2" scrolldelay="5"><A class="Internet" href="/jsp/securityIntermediate.jsp" target="_blank"><font color="yellow">Retail Customers are requested to select "PERSONAL BANKING" and Corporate Customers select "CORPORATE BANKING" to Login  -  SECURITY CAUTION: Please do not disclose your Account details / Debit / Credit Card / Personal Information to unknown sources through Internet .&nbsp;&nbsp;&nbsp;Keep your User-id and password(s) secret and difficult to guess. Do not use the PCs in public places such as internet cafes where multiple people have access.&nbsp;&nbsp;&nbsp;Transfer funds to any CBS Branch accounts in Indian Bank ONLINE. Contact your branch for availing funds transfer facility now&nbsp;!!!</font></A></marquee>-->
+			<div id="demo">
+				<div onclick="window.open('https://www.tin-nsdl.com/','_newtab');">Discover
+ the ease of banking with Indian Bank ! Pay your Income Tax Online 
+through Indian Bank Internet Banking Facility. Click Here to Pay your 
+Tax Online !!!</div>
+				<div onclick="window.open('https://www.indianbank.net.in/jsp/FundsTransfer.htm','_newtab');" style="display: none;">Transfer
+ funds to any CBS branch accounts in Indian Bank ONLINE. Contact your 
+branch for availing funds transfer facility now !!!</div>
+				<div onclick="window.open('https://www.indianbank.net.in/jsp/start.jsp','_newtab');" style="display: block;">Avail e-Payment facility for Service Tax &amp; Excise Duty Payments. Contact your branch for details</div>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+<!-- end of marquee replacement - 04-08-15 -->
+<br><font size="4"><b>IMPORTANT SECURITY GUIDELINES</b></font><table align="left">
+
+<tbody><tr></tr>
+<!-- added by afzal for alignment issues - 04-08-15 -->
+<tr>
+<td colspan="2" class="theader8"> <font size="3"><b>PLEASE ENSURE:</b></font></td>
+</tr><!-- end of alignment issue - 04-08-15 -->
+<tr>
+<td valign="top"><img src="Indian%20Bank_files/arLogo.jpg" border="0">
+</td>
+<td class="theader8"> <font size="3">You are connected to </font><font color="blue">https://www.indianbank.net.in </font></td></tr>
+<tr>
+<td valign="top"><img src="Indian%20Bank_files/arLogo.jpg" border="0">
+</td>
+<td class="theader8"><font size="3">Please note the URL Address starts as https: and not http (https assures secured site).</font></td></tr>
+<tr>
+<td valign="top"><img src="Indian%20Bank_files/arLogo.jpg" border="0">
+</td>
+<td class="theader8"><font size="3">On the bottom status line, a security lock is displayed. </font></td></tr>
+<tr>
+<td valign="top"><img src="Indian%20Bank_files/arLogo.jpg" border="0">
+</td>
+<td class="theader8"><font size="3">On double clicking the lock symbol, 
+the Certificate Information and Verisign symbol are displayed which when
+ clicked displays Verisign Certificate.</font></td></tr>
+<tr>
+<td valign="top"><img src="Indian%20Bank_files/arLogo.jpg" border="0">
+</td>
+<td class="theader8"><font size="3">DO NOT CONNECT TO THE SITE FROM A LINK OR ANY E MAILS.</font></td></tr>
+<tr>
+<td valign="top"><img src="Indian%20Bank_files/arLogo.jpg" border="0">
+</td>
+<td class="theader8"><font size="3" color="RED"><b>Regularly update 
+antivirus/firewalls/application software in the PC/Mobile Phone/Smart 
+Phone used for conducting Internet Banking transactions.</b></font></td></tr>
+</tbody></table>
+</form>
+
+</body></html>

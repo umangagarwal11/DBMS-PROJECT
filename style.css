@@ -1,0 +1,132 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+@charset "utf-8";
+/* CSS Document */
+/* and last but not the least stylesheet file that makes pretty view of  */
+*
+{
+ margin:0;
+ padding:0;
+}
+body
+{
+ background:#f9f9f9;
+ font-family:"Courier New", Courier, monospace;
+}
+#header
+{
+ width:100%;
+ height:50px;
+ background:#00a2d1;
+ color:#f9f9f9;
+ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ font-size:35px;
+ text-align:center;
+}
+#body
+{
+ margin-top:80px;
+}
+table
+{
+ width:40%;
+}
+table,td
+{
+ border-collapse:collapse;
+ border:solid #d0d0d0 1px;
+ padding:25px;
+}
+table td input
+{
+ width:97%;
+ height:35px;
+ border:dashed #00a2d1 1px;
+ padding-left:15px;
+ font-family:Verdana, Geneva, sans-serif;
+ box-shadow:0px 0px 0px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td input:focus
+{
+ box-shadow:inset 1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+}
+table td button
+{
+ border:solid #f9f9f9 0px;
+ box-shadow:1px 1px 1px rgba(1,0,0,0.2);
+ outline:none;
+ background:#00a2d1;
+ padding:15px;
+ color:#f9f9f9;
+ font-family:Arial, Helvetica, sans-serif;
+ font-weight:bolder;
+ border-radius:3px;
+ width:100%;
+}
+table td button:active
+{
+ position:relative;
+ top:1px;
+}
+#footer
+{
+ margin-top:100px;
+ font-weight:bolder;
+ color:#00a2d1;
+ font-family:Verdana, Geneva, sans-serif;
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ font-family:"Courier New", Courier, monospace;
+ font-size:20px;
+}
+#footer a
+{
+ color:#004567;
+ text-decoration:none;
+}
+#footer a:hover
+{
+ color:brown;
+}
+#footer hr
+{
+ width:80%;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
