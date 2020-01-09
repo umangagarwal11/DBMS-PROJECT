@@ -1,0 +1,16 @@
+#Security1{font-family:Verdana;font-weight:bold;font-size:16;text-align:center;}
+#Security2{font-family:Verdana;font-size:14;text-align:justify;}
+Table.MainTable{border-width: 1px 1px 1px 1px;border-style: solid;border-color : Black;background-color: #92B9E7;width:380px;height:210px;}
+TD.frmlbl{FONT-SIZE:15;COLOR: #011B4F;FONT-FAMILY:Verdana;font-weight:bold;}
+Input.loginButtons{BACKGROUND-COLOR: #003399;COLOR: #FFFFFF;FONT-FAMILY: Times New Roman;FONT-WEIGHT:BOLD;FONT-SIZE:16;HEIGHT: 33px;TEXT-ALIGN: center;VERTICAL-ALIGN: middle;WIDTH: 90px;}
+Input.login1{FONT-SIZE:14;HEIGHT: 30px;font-weight:bold;TEXT-ALIGN: center;VERTICAL-ALIGN: middle;WIDTH: 32px;font-family:Verdana;BACKGROUND-COLOR:#f2f8ff;border-color:black;border-width:1px}
+Input.login2{FONT-SIZE:14;HEIGHT: 30px;font-weight:bold;TEXT-ALIGN: center;VERTICAL-ALIGN: middle;WIDTH: 43px;font-family:Verdana;BACKGROUND-COLOR:#f2f8ff;border-color:black;border-width:1px}
+A.Marquee{text-decoration:none;font-family:Arial;font-size:15;color:blue;}
+Font.login1{color:#011B4F;font-family:Verdana;font-size:19;}
+Font.login2{color:#011B4F;font-family:Verdana;font-size:26;}
+Font.login3{color:#011B4F;font-family:Verdana;font-size:34;}
+Font.loginColour{color:Black;font-family:Verdana;font-size:17;}
+#Error{font-weight: bold;background-color: #C82715;text-align:center;font-family:Verdana;font-size:15;color:white;}
+B.Internet{font-family:Verdana;font-size:90%;color:#3333CC;}
+A.Internet1{text-decoration: none;font-family:Verdana;font-size:108%;font-weight:bold;color:#A52A2A}
+A.cancel{text-decoration: none;font-family:Verdana;font-size:100%;font-weight:bold;color:#3333CC}
